@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace Catalog.API.Data;
 
-public interface ICatelogContext
+public interface ICatalogContext
 {
     IMongoCollection<Product> Products { get; }
 }

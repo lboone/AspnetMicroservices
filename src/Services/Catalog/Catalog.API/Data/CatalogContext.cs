@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace Catalog.API.Data;
 
-public class CatalogContext : ICatelogContext
+public class CatalogContext : ICatalogContext
 {
     public CatalogContext(IConfiguration configuration)
     {
