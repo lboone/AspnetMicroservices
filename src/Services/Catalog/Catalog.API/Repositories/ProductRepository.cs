@@ -31,7 +31,7 @@ public class ProductRepository : IProductRepository
                         .FirstOrDefaultAsync();
     }
 
-    public async Task<IEnumerable<Product>> GetProductByName(string name)
+    public async Task<IEnumerable<Product>> GetProductsByName(string name)
     {
         FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Name, name);
 
@@ -41,7 +41,7 @@ public class ProductRepository : IProductRepository
                         .ToListAsync();
     }
 
-    public async Task<IEnumerable<Product>> GetProductByCategory(string categoryName)
+    public async Task<IEnumerable<Product>> GetProductsByCategory(string categoryName)
     {
         FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Category, categoryName);
 
